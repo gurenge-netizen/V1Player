@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black overflow-hidden select-none;
+    cursor: default;
+  }
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom cursor */
+* {
+  cursor: default;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Smooth transitions */
+.transition-all {
+  transition-duration: 200ms;
+}
